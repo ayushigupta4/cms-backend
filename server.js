@@ -20,9 +20,9 @@ app.post('/create-entity', async (req, res) => {
     if (attr.type === 'STRING') {
       modelAttributes[attr.name] = { type: DataTypes.STRING };
     } else if (attr.type === 'INTEGER') {
-      modelAttributes[attr.name] = { type: DataTypes.INTEGER};
+      modelAttributes[attr.name] = { type: DataTypes.BIGINT};
     } else if (attr.type === 'DATE') {
-      modelAttributes[attr.name] = { type: DataTypes.DATE };
+      modelAttributes[attr.name] = { type: DataTypes.DATEONLY };
     }
   });
 
